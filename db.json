@@ -1,0 +1,25 @@
+{
+  "details": [
+    {
+      "Resname": "Shahi",
+      "src": "shahi.jpg",
+      "Cuisine": "Indian, Chinese, mughalai",
+      "Address": "Mira Road",
+      "id": 1
+    },
+    {
+      "Resname": "parivaar",
+      "src": "parivaar.jpg",
+      "Cuisine": "Indian, Chinese, mughalai",
+      "Address": "Mira Road",
+      "id": 2
+    },
+    {
+      "Resname": "Shanti-Sagar",
+      "src": "shanti sagar.jpg",
+      "Cuisine": "Indian, Chinese, mughalai",
+      "Address": "Mira Road",
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+    <title>My Restaurant</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+	
+</head>
+
+	<style>
+	.details{
+  border: 1px solid black;
+  
+}
+body{
+background-color:yellow;
+}
+
+.vignette {
+  max-width: 200px;
+  max-height: 200px;
+    
+}
+
+#app {
+  margin-top:50px
+}
+
+	
+
+	
+</style>
+	 
+</head>
+<body>
+     
+
+    	<div class="jumbotron">
+	    	<h3 class="text-center">Search the restaurant you want</h3>
+	    	<form id="searchForm" form method="GET" action ="/form.html">
+	    		<input type="text" class="form-control" id="input"  placeholder="Search Restaurant...">	
+	    	</form>
+			<br><right>
+			<h4><a href="form.html">Want to add new restaurant click here</a></h4>
+		
+	    </div>
+
+		
+	<div class = "details">
+	<div id="app">		
+	
+<h5> Click the restaurtant name/image to order food</h5>
+	    <ul >
+      <li v-for="detail in details" :key="detail.id">
+      <a href="test3.html"><img :src="detail.src" class="circle vignette "></a><center>Hotel-Name:<a href="test3.html"><span v-text="detail.Resname"></span></a>
+								<center>	Cuisine:<span  v-text="detail.Cuisine"></span> <div> Address:<span  v-text="detail.Address"></span></div>
+      </li>
+
+    </ul>
+</div>
+</div>
+<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="index.js">
+
+	</script>
+	</body>
+	</html>

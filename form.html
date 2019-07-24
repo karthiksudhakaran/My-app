@@ -1,0 +1,36 @@
+<html>
+<head>
+<title> Form</title>
+<style>
+body{
+background-color:yellow;
+}
+</style>
+
+</head>
+<body>
+<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+<a href="index.html">Home</a>
+<div id="form">
+<h1>Add a new restaurant</h1>
+<form align ="center" @submit.prevent ="AddResdetails()">
+Name of Restaurant:<input name="restaurant name" type="text" placeholder="Name of Restaurant" v-model="Resname"><br><br><br>
+Image Link:<input type="url" name="url" placeholder="Image link" v-model="src"><br><br><br>
+Address:<input name="Address" type=text" placeholder="Address" v-model="Address"><br><br>
+Cuisine:<input name="Cuisine" type=text" placeholder="Cuisine" v-model="Cuisine"><br><br>
+
+<button >Submit</button>
+
+
+</form>
+    <ul >
+      <li v-for="res in Rest" :key="res.name">
+     <center> <span v-text="res.Resname"></span></a>
+		<center><span  v-text="res.Cuisine"></span> <div> <center><span  v-text="res.Address"></span></div>
+      </li>
+	 
+</div>
+ <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src ="form.js"></script>
+</body>
+</html>
